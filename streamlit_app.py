@@ -44,12 +44,12 @@ elif app_mode =='Prediction':
     Self_Employed=st.sidebar.radio('Self Employed',tuple(feature_dict.keys()))
     Dependents=st.sidebar.radio('Dependents',options=['0','1' , '2' , '3+'])
     Education=st.sidebar.radio('Education',tuple(edu.keys()))
-    ApplicantIncome=st.sidebar.slider('ApplicantIncome',0,10000,0,)
-    CoapplicantIncome=st.sidebar.slider('CoapplicantIncome',0,10000,0,)
-    LoanAmount=st.sidebar.slider('LoanAmount in K$',9.0,700.0,200.0)
-    Loan_Amount_Term=st.sidebar.selectbox('Loan_Amount_Term',(12.0,36.0,60.0,84.0,120.0,180.0,240.0,300.0,360.0))
-    Credit_History=st.sidebar.radio('Credit_History',(0.0,1.0))
-    Property_Area=st.sidebar.radio('Property_Area',tuple(prop.keys()))
+    ApplicantIncome=st.sidebar.slider('Applicant Income',0,100000,0,)
+    CoapplicantIncome=st.sidebar.slider('Coapplicant Income',0,100000,0,)
+    LoanAmount=st.sidebar.slider('Loan Amount in 1,000s',9.0,700.0,200.0)
+    Loan_Amount_Term=st.sidebar.selectbox('Loan Term',(12.0,36.0,60.0,84.0,120.0,180.0,240.0,300.0,360.0))
+    Credit_History=st.sidebar.radio('Credit History',(0.0,1.0))
+    Property_Area=st.sidebar.radio('Property Area',tuple(prop.keys()))
 
 
     class_0 , class_3 , class_1,class_2 = 0,0,0,0
